@@ -18,7 +18,8 @@ public class Ticket {
         // Constructor por defecto
     }
 
-    public Ticket(String estado, String url, Date fechaCreacion, String marcaAfectada, String correoProveedor, String correoCliente) {
+    public Ticket(String id,String estado, String url, Date fechaCreacion, String marcaAfectada, String correoProveedor, String correoCliente) {
+		this.id = id;
         this.estado = estado;
         this.url = url;
         this.fechaCreacion = fechaCreacion;
