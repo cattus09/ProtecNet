@@ -56,16 +56,13 @@ public class IA {
 
 ### Controladores
 
-- Controlador de Usuarios: Maneja operaciones CRUD y búsquedas de usuarios.
-- Controlador de Productos: Maneja operaciones CRUD y búsquedas de productos.
-- Controlador de Pedidos: Maneja operaciones CRUD y búsquedas de pedidos.
-- Controlador de Tickets: Maneja operaciones CRUD y búsquedas de tickets.
+- Controlador de Analista: Actualiza y lee los tickets.
+- Controlador de IA: Crea los tickets.
 
 ### Servicios
 
-- Servicio de Usuarios: Provee lógica de negocio para operaciones relacionadas con usuarios.
-- Servicio de Productos: Provee lógica de negocio para operaciones relacionadas con productos.
-- Servicio de Pedidos: Provee lógica de negocio para operaciones relacionadas con pedidos.
+- Servicio de Analista: Provee lógica de negocio para operaciones relacionadas con tickets.
+- Servicio de IA: Provee lógica de negocio para operaciones relacionadas con tickets.
 - Servicio de Tickets: Provee lógica de negocio para operaciones relacionadas con tickets.
 
 

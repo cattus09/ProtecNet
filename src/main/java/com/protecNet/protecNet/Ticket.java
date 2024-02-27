@@ -1,34 +1,33 @@
-package com.protecNet.protecNet;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-//import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Date;
 
-@SpringBootApplication
+@Document(collection = "tickets") // Indica que esta entidad debe ser almacenada en la colección "tickets" de MongoDB
 public class Ticket {
+    @Id
     private String id;
     private String estado;
     private String url;
     private Date fechaCreacion;
     private String marcaAfectada;
     private String correoProveedor;
-	private String correoCustomer;
+    private String correoCliente; // Nuevo campo para el correo de la marca afectada
 
     public Ticket() {
         // Constructor por defecto
     }
 
-    public Ticket(String id, String estado, String url, Date fechaCreacion, String marcaAfectada, String correoProveedor, String correoCustomer) {
-        this.id = id;
+    public Ticket(String estado, String url, Date fechaCreacion, String marcaAfectada, String correoProveedor, String correoCliente) {
         this.estado = estado;
         this.url = url;
         this.fechaCreacion = fechaCreacion;
         this.marcaAfectada = marcaAfectada;
         this.correoProveedor = correoProveedor;
-		this.correoCustomer = correoCustomer;
+        this.correoCliente = correoCliente;
     }
 
-    // Getters y setters
+    // Getters y setters para todos los campos
 
     public String getId() {
         return id;
@@ -78,11 +77,11 @@ public class Ticket {
         this.correoProveedor = correoProveedor;
     }
 
-	public String getCorreoCustomer() {
-        return correoCustomer;
+    public String getCorreoCliente() {
+        return correoCliente;
     }
 
-    public void setCorreoCustomerr(String correoCustomer) {
-        this.correoCustomer = correoCustomer;
+    public void setCorreoCliente(String correoCliente) {
+        this.correoCliente = correoCliente;
     }
 }
