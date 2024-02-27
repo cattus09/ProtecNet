@@ -69,6 +69,6 @@ public class IA {
 ## Desarrolladores
 
 - **Sergio Gonzalez**
-- **Francisco**
+- **Francisco Márquez**
 - **Juan paulo**
 - **Luisa**
