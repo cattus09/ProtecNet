@@ -71,4 +71,4 @@ public class IA {
 - **Sergio Gonzalez**
 - **Francisco Márquez**
 - **Juan paulo**
-- **Luisa**
+- **Luisa De la hoz**
